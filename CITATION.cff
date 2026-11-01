@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "UrbanMask observation base: Sentinel-2 pixel features and building labels, Goiânia 2020–2023"
+type: dataset
+version: 1.0.0
+date-released: "2026-11-01"
+license: CC-BY-4.0
+repository-code: "https://github.com/luizmlpascoal/geoinfo-dataset-urbanmask"
+abstract: >-
+  4,383,413 Sentinel-2 pixel-years (10 m) from 98,684 vacant-lot polygons in Goiânia, Brazil,
+  2020–2023, with 14 spectral, texture and temporal features and a building label derived from
+  Google Open Buildings 2.5D Temporal. Training and validation base of the UrbanMask classifiers.
+keywords:
+  - Sentinel-2
+  - building detection
+  - Open Buildings Temporal
+  - training data
+  - urban monitoring
+  - Goiânia
+authors:
+  - family-names: Ferreira
+    given-names: Thiago Honorato
+    email: thiago.honorato@discente.ufg.br
+  - family-names: Teixeira
+    given-names: Lana Mara Silva
+    email: lanamarast@gmail.com
+  - family-names: Pascoal
+    given-names: Luiz Mário Lustosa
+    email: luizmlpascoal@gmail.com
+  - family-names: Oliveira
+    given-names: Sávio Salvarino Teles de
+    email: savioteles@ufg.br
+  - family-names: Camilo Junior
+    given-names: Celso Gonçalves
+    email: celsocamilo@ufg.br
+  - family-names: Silvério
+    given-names: Renato Gomes
+    email: renatogomessilverio@gmail.com
+  - family-names: Andrade
+    given-names: Tharles de Sousa
+    email: irtharles@gmail.com
+references:
+  - type: data
+    title: "Open Buildings 2.5D Temporal Dataset"
+    authors:
+      - name: "Google Research"
+    url: "https://sites.research.google/gr/open-buildings/temporal"
+    license: CC-BY-4.0
+  - type: software
+    title: "UrbanMask"
+    authors:
+      - family-names: Ferreira
+        given-names: Thiago Honorato
+    url: "https://github.com/ThiagoHF31/urbanMask"

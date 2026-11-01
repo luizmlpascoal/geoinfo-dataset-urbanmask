@@ -1,0 +1,10 @@
+{
+ "modo": "completo",
+ "linhas_brutas": 13732832,
+ "linhas_duplicadas": 9349419,
+ "linhas_unicas": 4383413,
+ "poligonos": 98684,
+ "prevalencia": 0.068,
+ "prevalencia_base_completa_conhecida": 0.0698,
+ "lotes_csv_usados": 1116
+}

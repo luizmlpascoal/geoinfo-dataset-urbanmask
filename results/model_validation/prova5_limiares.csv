@@ -1,0 +1,10 @@
+teste,limiar,precisao,recall,f1,"dif_para_0,291"
+treino 2020 → teste 2021 | limiar da validação,0.3027,0.4557,0.6865,0.5478,0.0117
+treino 2020–21 → teste 2022 | limiar da validação,0.2824,0.5162,0.6604,0.5794,-0.0086
+treino 2020–22 → teste 2023 | limiar da validação,0.2612,0.5172,0.6913,0.5917,-0.0298
+3a blocos fold 1/5 (todos os anos) | limiar da validação,0.2855,0.4766,0.6638,0.5548,-0.0055
+3a blocos fold 2/5 (todos os anos) | limiar da validação,0.3109,0.5096,0.6795,0.5824,0.0199
+3a blocos fold 3/5 (todos os anos) | limiar da validação,0.2882,0.504,0.6293,0.5597,-0.0028
+3a blocos fold 4/5 (todos os anos) | limiar da validação,0.3025,0.4745,0.6224,0.5385,0.0115
+3a blocos fold 5/5 (todos os anos) | limiar da validação,0.2649,0.4944,0.7323,0.5903,-0.0261
+3b treino 2020–22 (blocos A) → teste 2023 (blocos B) | limiar da validação,0.2912,0.5206,0.6495,0.578,0.0002

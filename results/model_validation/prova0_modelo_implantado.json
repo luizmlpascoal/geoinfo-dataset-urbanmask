@@ -1,0 +1,19 @@
+{
+ "componentes_PCA": 6,
+ "variancia_explicada_acumulada": 0.9591,
+ "variancia_por_componente": [
+  0.5063,
+  0.1467,
+  0.1127,
+  0.0714,
+  0.0639,
+  0.0581
+ ],
+ "amostras_de_treino (n_samples_)": 10986265,
+ "80% de 13.732.832 (divisao aleatoria de todos os anos)": 10986266,
+ "so 2020-2022 (se fosse treino temporal, base completa)": 10299527,
+ "arvores": 100,
+ "profundidade_max": 12,
+ "class_weight": null,
+ "limiar_implantado": 0.291
+}

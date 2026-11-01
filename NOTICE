@@ -1,0 +1,16 @@
+UrbanMask observation base (Goiânia, 2020–2023)
+Copyright 2026 the authors (CEIA, Universidade Federal de Goiás). Data licensed under CC BY 4.0 (LICENSE); scripts under MIT (LICENSE-CODE).
+
+Labels (label_built, ob_presence) derive from Google Open Buildings 2.5D Temporal v1 (Google Research).
+  Source: https://sites.research.google/gr/open-buildings/temporal
+  Earth Engine: GOOGLE/Research/open-buildings-temporal/v1
+  Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Citation: W. Sirko et al. "High-resolution building and road detection from Sentinel-2." arXiv:2310.11622, 2023.
+
+Features derive from modified Copernicus Sentinel-2 data (2020–2023), Level-2A harmonised surface reflectance,
+accessed through Google Earth Engine (COPERNICUS/S2_SR_HARMONIZED).
+
+Polygons: vacant lots of the Mapa Urbano Básico Digital de Goiânia (Prefeitura de Goiânia), identified only by an
+integer index; no cadastral attribute is included.
+
+No warranty: the data are provided "as is", as stated in Section 5 of CC BY 4.0.

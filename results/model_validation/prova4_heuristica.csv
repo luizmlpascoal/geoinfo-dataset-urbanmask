@@ -1,0 +1,15 @@
+regra,ano,precisao,recall,f1,marcados
+HEU 4 condições (produção),2020,0.3903,0.3903,0.3903,68627
+HEU 4 condições (produção),2021,0.368,0.3982,0.3825,79156
+HEU 4 condições (produção),2022,0.4219,0.3584,0.3876,64210
+HEU 4 condições (produção),2023,0.4526,0.3545,0.3976,63248
+HEU 4 condições (produção),todos,0.4056,0.3745,0.3894,275241
+HEU 6 condições (testada),2020,0.5094,0.1767,0.2624,23810
+HEU 6 condições (testada),2021,0.5083,0.1846,0.2708,26564
+HEU 6 condições (testada),2022,0.5199,0.1822,0.2698,26483
+HEU 6 condições (testada),2023,0.5412,0.1968,0.2886,29360
+HEU 6 condições (testada),todos,0.5205,0.1855,0.2735,106217
+"PCA implantado (limiar 0,291)",2020,0.4988,0.6386,0.5601,87864
+"PCA implantado (limiar 0,291)",2021,0.4695,0.6644,0.5502,103513
+"PCA implantado (limiar 0,291)",2022,0.5216,0.6537,0.5802,94722
+"PCA implantado (limiar 0,291)",2023,0.5476,0.6422,0.5911,94697
