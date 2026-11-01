@@ -27,12 +27,16 @@ The base holds **4,383,413 pixel-years**: about 1.1 million 10 m Sentinel-2 pixe
 .
 ├── data/
 │   ├── pixels_2020.parquet ... pixels_2023.parquet   # one file per year (≈ 40 MB each, zstd)
+├── apms/
+│   └── apms_goiania.gpkg         # 2,144 monitored municipal public areas (no personal fields)
 ├── docs/
 │   ├── data_dictionary.md        # columns, types and units
+│   ├── apm_layer.md              # the APM layer: provenance and columns
 │   └── features.md               # formulas of the 14 features and the labelling rule
 ├── scripts/
 │   ├── build_release.py          # how the public files were derived from the raw extraction
-│   └── analysis.py               # descriptive analysis -> results/
+│   ├── analysis.py               # descriptive analysis of the pixel base -> results/
+│   └── apm_analysis.py           # APM layer, pixel grid and use groups -> results/
 ├── results/
 │   ├── summary.md                # all descriptive statistics (generated)
 │   ├── *.csv                     # tables used in summary.md
@@ -89,6 +93,22 @@ All values come from [`results/summary.md`](results/summary.md).
 
 The label flicker reflects uncertainty in the Open Buildings Temporal product itself. Pixel-level labels are therefore a reference, not ground truth.
 
+## The monitored public areas (APMs)
+
+`apms/apms_goiania.gpkg` holds the 2,144 municipal public areas (APMs) that UrbanMask monitors every 15 days. Personal fields such as owner and IPTU registration were removed; see [`docs/apm_layer.md`](docs/apm_layer.md). From [`results/apm_summary.md`](results/apm_summary.md):
+
+| Indicator | Value |
+|---|---|
+| APMs / total area | 2,144 / 1,012.9 ha (median 363 m²) |
+| 10 m pixels in the UrbanMask grid | 104,415 (the operational grid, rebuilt by `scripts/apm_analysis.py`) |
+| APMs smaller than one pixel | 456 (21.3%), each observed through a single representative pixel |
+| Largest use groups (APMs / pixels) | green areas and protection zone IV 962 / 45,047; municipal parks 95 / 20,138; ecological reserves 20 / 10,658; institutional 502 / 1,694 |
+| Registered use already flagged in the register | 14 APMs as *invasão* (invasion), 110 as *comprometida* (compromised) |
+
+`results/apm_round_2026-06-04.csv` gives the pixels flagged by each classifier and use group in the operational round of 4 June 2026, as reported in the UrbanMask paper.
+
+![APMs by use group](results/figures/apm_map.png)
+
 ## Validation of the UrbanMask classifiers on this base
 
 Summary of [`results/model_validation/`](results/model_validation/README.md), all on unique pixels:
@@ -134,7 +154,7 @@ python scripts/analysis.py
 - **Domain.** Pixels come from vacant lots only. Built prevalence and the spectral background differ from other land types, such as public green areas.
 - **Composites.** Training composites are annual medians. UrbanMask in operation uses a 150-day trailing median, so features computed in production are not identical.
 - **Labels.** Labels come from a model, Open Buildings Temporal, which is itself derived from Sentinel-2; they are not field data. Agreement with them measures consistency with that product, not absolute accuracy.
-- **Mixed pixels.** A 10 m pixel (100 m²) mixes buildings with their surroundings, and small extensions may not dominate a pixel.
+- **Mixed pixels.** A 10 m pixel (100 m²) mixes buildings with their surroundings, and small extensions may not dominate a pixel; 21% of the APMs are smaller than one pixel.
 
 ## Licence and attribution
 

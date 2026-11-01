@@ -1,0 +1,9 @@
+use_group,apms,pixels,flagged_heu,flagged_pca_rf,apms_flagged
+Green areas and protection zone IV,962,45047,5,48,34
+Municipal parks and ecological reserves,115,30796,0,0,0
+Institutional,502,1694,26,68,28
+Miscellaneous,116,7646,51,39,8
+No designated use,106,7089,7,18,14
+Occupants,14,232,2,1,2
+Use group not informed,329,11911,1,3,4
+Total,2144,104415,92,177,90

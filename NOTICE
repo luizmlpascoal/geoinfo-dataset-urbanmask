@@ -13,4 +13,8 @@ accessed through Google Earth Engine (COPERNICUS/S2_SR_HARMONIZED).
 Polygons: vacant lots of the Mapa Urbano Básico Digital de Goiânia (Prefeitura de Goiânia), identified only by an
 integer index; no cadastral attribute is included.
 
+APM layer (apms/apms_goiania.gpkg): municipal public areas register of the Prefeitura de Goiânia (SEPLANH),
+as distributed in the UrbanMask repository (https://github.com/ThiagoHF31/urbanMask, data/apms.gpkg), with
+fields identifying people (owner name, IPTU/cadastral registration) removed.
+
 No warranty: the data are provided "as is", as stated in Section 5 of CC BY 4.0.
