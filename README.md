@@ -165,7 +165,6 @@ python scripts/analysis.py
 ## Related resources
 
 - UrbanMask code and model: https://github.com/ThiagoHF31/urbanMask
-- GYN-OBV, building-level visual validation of Open Buildings footprints in Goiânia: https://github.com/luizmlpascoal/geoinfo-dataset-gyn_obv
 
 ## Acknowledgements
 
